@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.login-sheet {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-image: url("jp.jpg");
+  background-size: cover;
+}
+
+h3 {
+  margin-top: 25px;
+  color: whitesmoke;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px rgb(214, 46, 46);
+}
+
+.login {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: whitesmoke;
+  z-index: 100;
+  width: 400px;
+  height: 600px;
+  box-shadow: 5px 5px 5px rgb(82, 81, 81);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+form {
+  height: 90%;
+  width: 80%;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.login-sheet img {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  padding: 10px;
+  margin-left: 54px;
+  background-color: rgb(212, 32, 32);
+  box-shadow: 5px 5px 5px rgb(214, 46, 46);
+  border-radius: 5px;
+  font-family: sans-serif;
+  width: 200px;
+}
+
+.cp {
+  width: 70px;
+}
+
+a {
+  padding: 4px;
+  background-color: forestgreen;
+  color: black;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.newCard {
+    background-color: black; 
+    padding: 20px;
+    width: 80%; 
+    max-width: 600px; 
+    margin: 20px auto; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    color: white;
+  }
+  
+  
+  .headerline {
+    color: rgb(86, 201, 86);
+    text-align: center;
+  }
+  
+
+  #call, #new-page {
+    margin-bottom: 15px;
+  }
+  
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    padding: 8px;
+    width: 100%;
+    margin-top: 8px;
+    box-sizing: border-box; 
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3; 
+  }
+  
+  
+  @media (max-width: 768px) {
+    .newCard {
+      width: 90%;
+    }
+  }

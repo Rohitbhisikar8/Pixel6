@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank you</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body onload="getUserName()">
+    <div class="newCard">
+    <div class="new_page">
+      <h1 class="headerline">Verification Page</h1>
+      <p id="call"></p>
+      <p id="new-page">
+        Thank you for your inquiry. A 4-digit verification number has been sent
+        to your email please enter it in the
+        following box and submit for confirmation:
+      </p>
+
+      <label for="otp">OTP:</label>
+      <input type="text" id="userOtp" name="otp" />
+      <button onclick="validateOTP()" id="verification">Validate</button>
+    </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

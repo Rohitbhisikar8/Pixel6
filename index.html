@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loan Registration</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="login-sheet">
+    <div class="login">
+      <form action="" name="Registration" onsubmit="return onSubmit()" method="post">
+        <h3><em>Loan Registration</em></h3>
+        <br />
+
+        <label for="username">Name</label><br />
+        <input type="text" id="username" name="username" required placeholder="Enter Your Full Name" />
+        <p id="p1"></p>
+        <br />
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email" required placeholder="Enter Your Valid Email" />
+        <p id="p2"></p>
+        <br />
+        <label for="pan">Pan Details</label><br />
+        <input type="text" id="pan" name="pan" required placeholder="Eg.ABCTY1234D" />
+        <p id="p3"></p>
+        <br />
+        <label for="amount">Loan Amount</label><br />
+        <input type="number" id="amount" name="amount" required max="1000000" placeholder="Enter Amount" />
+        <p id="p4"></p>
+        <p id="word"></p>
+        <br /><br />
+        <label>Captcha</label><br />
+        <label id="demo"></label> = ?
+        <input class="cp" type="number" id="captcha" name="captcha" min="0" />
+        &nbsp;&nbsp;
+        <a href="" onclick="generateCaptcha()">Refresh Captcha</a><br />
+        <span id="p5"></span>
+        <span id="p6"></span>
+        <br />
+        <button id="main" type="submit" onclick="generateOtp()">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
